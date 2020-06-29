@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\MadLibs"
+		},
+		{
+			"path": "..\\..\\HelloAgain"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Coding Projects"
+	}
+}

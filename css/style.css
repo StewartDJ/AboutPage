@@ -1,40 +1,118 @@
+
+
 body {
-    background-color: blue;
+    /*background-color: blue;*/
+    background: url(../BG.jpg);
+    background-repeat: repeat;
+    background-size: contain;
 }
+@media (max-width: 240px){
+    body{
+        color: white;
+
+        }
+    }
+
+    @media (max-width: 240px){
+        img{
+            width: 70%;
+            max-height: auto;
+            }
+        }
+    
+
 h1 {
+    display: flex;
+    flex-direction: row;
     color: blue;
     font-family: 'Krona One', sans-serif;
-    font-size: xx-large;
+    font-size: 50px;
     font-weight: 800; 
-    margin: 10px
+    margin: 10px;
 }
-#backgroundforstuff {
+@media (max-width: 240px){
+    h1{
+        color: white; 
+        font-size: 20px;
+        max-width: auto;
+}
+        
+        }
+
+
+
+
+#backgroundforstuff { 
     min-height:100vh;
     width: 100vh;
     background-color: grey;
     margin-left: auto;
     margin-right: auto;
         border-color:white;
+        border-radius: 1%;
         border-width:10px;
         border-style: solid;
-}
+        box-shadow: 5px 15px 5px rgb(83, 201, 236);
+    }
+
+@media (max-width: 240px){
+    #backgroundforstuff{
+        background-color: black;
+        max-width: 70%;
+        max-height: auto;
+    }    
+    }
+    }
+
 
 #link-style {
     font-family: 'Krona One', sans-serif;
     font-weight: 800;
 }
 #words {
+    overflow-x: wrap;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    max-height: 100px;
     color:white;
     margin: 30px 50px 30px 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: smaller;
     font-weight: 300;
 }
+@media (max-width: 240px){
+    #words{
+        display: unset;
+        flex-direction: row;
+        overflow-y: unset;
+        max-height: 400px;
+        color:white;
+        margin: 30px 20px 10px 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        font-weight: 100;
+        }
+    }
+
 
 #myart {
+    display: flex;  /* make this work*/
+    align-items: left;  /* make this work*/
+    overflow-y: scroll;
+    max-height: 300px;
     padding: 50pt;
     margin: 0px 8px 0px 80px;
+    flex-wrap: wrap; /* make this work*/
 }
+@media (max-width: 240px){
+    #myart{
+        display: unset;
+        overflow-y: unset;
+        margin: 10px 10px 10px 10px;
+
+        }
+    }
 
 
 
