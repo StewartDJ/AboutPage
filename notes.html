@@ -1,0 +1,49 @@
+function splitify(str) {
+    // Only change code below this line
+  var makeSpace = str.split(" ");
+  var makeSpaceTwo = makeSpace.join(",")
+  var splittySplat = makeSpaceTwo.split("-")
+  var joinyJoin = splittySplat.join(",")
+  var splitByPeriod = joinyJoin.split(".")
+  var joiny = splitByPeriod.join(",")
+  var answer = joiny.split(",")
+  console.log(answer)
+  return answer;
+  
+    // Only change code above this line
+  }
+  splitify("Hello World,I-am code");
+
+  //COMINE ARRAY INTO STRING WITH JOIN
+
+  function sentensify(str) {
+    // Only change code below this line
+  var splittyBoi = str.split("-")
+  var stringyThingy = splittyBoi.join(",")
+  var splitAgain = stringyThingy.split(".")
+  var commaJoin = splitAgain.join(",")
+  var answer = commaJoin.split(",")
+  answer = answer.join(" ")
+  return answer
+    // Only change code above this line
+  }
+  sentensify("May-the-force-be-with-you");
+
+  
+  //NEXT ONE\\// The global variable
+  var globalTitle = "Winter Is Coming";
+  
+  // Only change code below this line
+  function urlSlug(title) {
+  
+  
+  var lowerCase = title.toLowerCase();
+  var titleArray = lowerCase.split(" ")
+  var noSpace = titleArray.filter((i) => (i !== ""))
+  var answer = noSpace.join("-")
+  return answer;
+  
+  }
+  // Only change code above this line
+
+  //NEXT ONE
